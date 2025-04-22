@@ -1,0 +1,178 @@
+.editor-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .note-title-input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .editor-toolbar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .editor-toolbar button {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.3rem;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .editor-toolbar button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .color-picker {
+    display: flex;
+    gap: 0.3rem;
+    margin-left: auto;
+  }
+  
+  .color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-option:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-option.selected {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2px var(--primary-color);
+  }
+  
+  .preview-btn {
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #f0f0f0;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .preview-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .preview-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .editor-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tag-input-container {
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .tag-input-container input {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .tag-input-container button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  .tag-input-container button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .note-content-input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .markdown-preview {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow-y: auto;
+  }
+  
+  .markdown-preview h1, 
+  .markdown-preview h2, 
+  .markdown-preview h3 {
+    margin: 1rem 0 0.5rem 0;
+  }
+  
+  .markdown-preview p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .markdown-preview ul, 
+  .markdown-preview ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .markdown-preview pre {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .markdown-preview code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+  }
+  
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #333;
+  }
+  
+  .tag-remove {
+    margin-left: 0.3rem;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 1;
+  }
